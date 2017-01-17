@@ -1,10 +1,9 @@
-// app/routes/application.js
 import Ember from 'ember';
 
 var Song = Ember.Object.extend({
   title: '',
-  band: '',
-  rating: 0
+  rating: 0,
+  band: ''
 });
 
 export default Ember.Route.extend({
@@ -27,5 +26,6 @@ export default Ember.Route.extend({
         rating: 2
       });
 
-    return [blackDog, yellowLedbetter, pretender]; }
+    return [blackDog, yellowLedbetter, pretender];
+  }
 });
